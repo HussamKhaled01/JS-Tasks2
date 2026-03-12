@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Task - Question 10</title>
+</head>
+
+<body>
+
+    <p id="q10"></p>
+
+    <script>
+        let text = "Orange Coding School";
+
+        let chars = text.split("");
+        let countC = 0;
+
+
+
+        for (let i = 0; i < chars.length; i++) {
+
+            if (chars[i].toLowerCase() === 'c') {
+                countC++;
+            }
+
+        }
+
+        document.getElementById("q10").innerHTML = countC;
+    </script>
+
+
+
+</body>
+
+</html>
