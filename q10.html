@@ -12,14 +12,13 @@
     <script>
         let text = "Orange Coding School";
 
-        let chars = text.split("");
         let countC = 0;
 
 
 
-        for (let i = 0; i < chars.length; i++) {
+        for (let i = 0; i < text.length; i++) {
 
-            if (chars[i].toLowerCase() === 'c') {
+            if (text[i] === 'c' || text[i] === 'C') {
                 countC++;
             }
 

@@ -12,29 +12,26 @@
     <script>
 
         let i = 0;
-        let j = 0;
         let text = "";
         let number = "";
-        let sum = 0;
-
-
-
-
-
+        let sum = 0;       
 
         for (let i = 1; i <= 200; i++) {
-            let number = i.toString();
-            let digits = number.split("");
+            let number = i;
 
-            for (let j = 0; j < digits.length; j++) {
-                sum += parseInt(digits[j]);
 
-                if (sum === 5) {
-                    text += i + "<br>";
-                }
+
+            while (number > 0) {
+                let digit = number % 10;
+                sum += digit;
+                number = Math.floor(number / 10);
+
+            }
+
+            if (sum === 5) {
+                text += i + "<br>";
             }
             sum = 0;
-
 
         }
 
