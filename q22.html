@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Task - Question 22</title>
+</head>
+
+<body>
+
+    <p id="q22"></p>
+
+    <script>
+
+        let i = 0;
+        let j = 0;
+        let text = "";
+        let number = "";
+        let firstDigit = 0;
+        let lastDigit = 0;
+        let sum = 0;
+
+
+
+
+
+
+        for (let i = 1; i <= 100; i++) {
+            let number = i.toString();
+            let digits = number.split("");
+
+            if (digits.length >= 2 && digits[digits.length - 1] !== "0") {
+
+                firstDigit = parseInt(digits[0]);
+                lastDigit = parseInt(digits[digits.length - 1]);
+
+                if (firstDigit > lastDigit) {
+                    text += i + "<br>";
+                }
+
+            }
+        }
+
+        document.getElementById("q22").innerHTML = text;
+    </script>
+
+
+
+</body>
+
+</html>
